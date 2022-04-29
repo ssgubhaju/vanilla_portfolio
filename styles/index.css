@@ -39,7 +39,7 @@ h1 {
 }
 
 .skills img {
-    aspect-ratio: 1;
+    aspect-ratio: 1/1;
     border-radius: .5rem;
     object-fit: cover;
 }
