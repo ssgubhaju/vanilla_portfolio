@@ -1,17 +1,26 @@
+<!--
+index.html* (home page). 
+The first page is the home page which introduces the site’s it introduces the site’s purpose (portfolio), 
+it could have a brief bio, tagline, welcome like “Hi, I’m John” or site purpose
+-->
+
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Index Page</title>
     <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <script defer src="./script/global.js"></script>
   </head>
   <body>
     <!-- Navigation -->
-    <nav>
-      <button class="burger">
+    <nav id="navbar">
+      <button class="burger" id="burger">
         <span class="line"></span>
         <span class="line"></span>
         <span class="line"></span>
       </button>
-      <ul>
+      <ul id="link-list">
         <li><a href="index.html">Home</a></li>
         <li><a href="portfolio.html">Portfolio</a></li>
         <li><a href="contact.html">Contact</a></li>
@@ -19,6 +28,46 @@
         <li><a href="sitereport.html">Site Report</a></li>
       </ul>
     </nav>
-    <h1>Index Page</h1>
+
+    <!-- Main content -->
+    <main>
+      <!-- Hero Section to introduce myself -->
+      <section class="hero">
+        <div class="name">
+          <h1>
+            Sabina <br />
+            Gubhaju
+          </h1>
+        </div>
+        <div class="description">
+          <p>
+            My name is Sabina Gubhaju and I'm a 21 year old tech enthusiast. I
+            love traveling to new places I've never been, seeing sights and
+            hearing voices hardly heard. I love cycling to these places, and
+            whenever I'm not out on an adventure, I'm reading about them.
+            <br />
+          </p>
+        </div>
+      </section>
+      <!-- Skills list -->
+      <section class="skills">
+        <h2>Skills</h2>
+        <figure>
+          <img src="./assets/pictures/drawing.jpg" alt="drawing" />
+          <figcaption>Drawing</figcaption>
+        </figure>
+        <figure>
+          <img src="./assets/pictures/painting.jpg" alt="painting" />
+          <figcaption>Painting</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="./assets/pictures/arts and crafts.jpg"
+            alt="arts and scrafts"
+          />
+          <figcaption>Arts & Crafts</figcaption>
+        </figure>
+      </section>
+    </main>
   </body>
 </html>

@@ -1,0 +1,51 @@
+.hero {
+    height: 60vh;
+    display: grid;
+    gap: 4rem;
+    place-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.name {
+    text-align: right;
+}
+
+h1 {
+    display: inline;
+    background-color: var(--primary-color);
+}
+
+.skills {
+    background-color: var(--primary-color-light);
+    padding: 1rem;
+    border-radius: .5rem;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.skills figure {
+    background-color: var(--black);
+    padding: .5rem .5rem 1rem .5rem ;
+    border-radius: 1rem;
+    color: var(--white);
+
+    display: grid;
+    gap: 1rem;
+}
+
+.skills img {
+    aspect-ratio: 1;
+    border-radius: .5rem;
+    object-fit: cover;
+}
+
+@media (max-width : 800px) {
+    .hero {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .hero .description,.name {
+        text-align: center;
+    }
+}
