@@ -6,8 +6,11 @@ Although this is not strictly the best way of working, you won’t be able to im
 requires a server-side language such as PHP which we will not use in this module.
 -->
 
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Contact Page</title>
@@ -33,18 +36,16 @@ requires a server-side language such as PHP which we will not use in this module
     </nav>
     <main>
       <h1>Contact Me!</h1>
-      <section class="contact">
+      <div class="contact">
         <form class="contact-form">
           <input type="text" placeholder="Name" />
           <input type="email" placeholder="me@example.com" />
           <textarea placeholder="Write me some feedback"></textarea>
-          <a
-            href="mailto:ssgubhaju@gmail.com?subject = Feedback&body = Message"
-          >
+          <a href="mailto:ssgubhaju@gmail.com?subject=Feedback&body=Message">
             Write to ssgubhaju@gmail
           </a>
         </form>
-      </section>
+      </div>
     </main>
   </body>
 </html>
