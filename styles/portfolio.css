@@ -1,0 +1,17 @@
+.projects-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    color: #0004;
+}
+
+figure {
+    margin: 0;
+}
+
+
+@media (max-width : 400px) {
+    .projects-grid {
+        grid-template-columns:auto;
+    }
+}

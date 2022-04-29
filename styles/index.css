@@ -6,6 +6,10 @@
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 
+.description {
+    max-width: 45ch;
+}
+
 .name {
     text-align: right;
 }
@@ -35,7 +39,7 @@ h1 {
 }
 
 .skills img {
-    aspect-ratio: 1;
+    aspect-ratio: 1/1;
     border-radius: .5rem;
     object-fit: cover;
 }

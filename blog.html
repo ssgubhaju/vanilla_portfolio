@@ -1,9 +1,20 @@
-<html>
+<!--
+*blog.html* (Blog page) 
+You will use columns on this page to demonstrate your skill. 
+The content should be largely typical for a blog 
+and contain three entries around your progress on the assignment.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Blog Page</title>
     <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/blog.css" />
     <script defer src="./script/global.js"></script>
   </head>
   <body>
@@ -22,6 +33,85 @@
         <li><a href="sitereport.html">Site Report</a></li>
       </ul>
     </nav>
-    <h1>Blog Page</h1>
+    <main>
+      <h1>Blog</h1>
+      <section class="entry">
+        <h3>Defining the project structure</h3>
+        <p>
+          Wireframing is the most important step in the software development
+          cycle. My teacher once said that
+          <i>"the more you delay coding the faster you finish development"</i>.
+        </p>
+        <p>
+          My initial commit contained empty files and folders that acted as
+          entries into which I could populate later once I ahd decided on how to
+          go about the design
+          <br />
+          So empty <code>html</code> files for each route, assets, script and
+          styles folder for <code>jpegs</code>, <code>javascript</code> and
+          <code>css</code> files respectively.
+        </p>
+        <p>
+          Good code is readable code, which is why I chose to use the
+          <b>Prettier</b> library for code formatting to maintain a coherent
+          aesthetic for every file, making the development experience a tad bit
+          less chaotic.
+        </p>
+      </section>
+      <section class="entry">
+        <h3>Templating & Consistency</h3>
+        <p>
+          Maintaining consistent design across multiple pages, particularly for
+          the navigation can be a challenge. Every page needs to look and feel
+          the same and hence redundacy is inevitable.
+        </p>
+        <p>
+          The simplest way of solving this problem with as little redundancy as
+          possible is simply to establish your objective and solve the first
+          piece before copy and paste to the rest of these files
+          <br />
+          For the <code>nav</code> issue, I had to solve the responsiveness
+          issue for just the home page and then copy over the markup as a
+          template to the rest of the files, giving it that consistent and
+          intentional feel.
+        </p>
+        <p>
+          All the files share a <code>global.css</code> stylesheet to give them
+          the same look and feel without much of a hustle, and each file has
+          their own specifications in a separate stylesheet; creating a neat and
+          convenient <b>Separation of Concerns</b>.
+          <br />
+          The <code>global.css</code> file defines a list of CSS variable that I
+          used in each page to maintain that uniform aesthetic without
+          unnecessary redundancy.
+        </p>
+      </section>
+      <section class="entry">
+        <h3>Markup Validity</h3>
+
+        <p>
+          It is important to ensure that your markup is valid and SEO friendly.
+          Despite the fact that all markup is inherrently the same, and that you
+          can use the humble <code>div</code> to represent a heading tag, or a
+          <code>span</code> in place of an <code>i</code> tag and style it using
+          CSS classes, it is still crucial to use the right tool for the job.
+          <br />
+          Valid markup doesn't only help search engines, it is a crucial tool in
+          web accessibility, allowing users to locate different sections of your
+          code neatly.
+        </p>
+        <p>
+          My markup conveniention is splitting essential sections of the code to
+          their individual functions; <code>nav</code> then
+          <code>main</code> then <code>footer</code> for instance.
+        </p>
+        <p>
+          It is crucial to add <code>meta</code> tags for the required metadata
+          especially for viewport scaling, and finally,
+          <b>KeepItSimpleStudid</b>. No one likes a bloated site so restrict
+          your site to the minimum requirements
+        </p>
+      </section>
+    </main>
   </body>
 </html>

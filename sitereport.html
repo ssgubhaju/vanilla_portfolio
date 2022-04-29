@@ -1,9 +1,25 @@
-<html>
+<!--
+*sitereport.html* (Site report)
+   - The report (250 word minimum) will contain your experience of learning the basics of web development, coding, design and debugging process.
+    This should be a log or an informal conversation explaining your development experience. Include your ups and downs!
+   - A ‘reflective discussion of your module experience’
+   - You will set out in the report the development of the site over the term and focus on both the technical and design of sites user interface (UI). 
+   Explain the design decisions you made, how you chose the font/colours and link to any sites which influenced your website’s design.
+   - Format the report with relevant sections, dates and headings.
+   - You should include images of your progress and document any changes you made over time.
+   - On this page, include screenshots of validation reports showing that your pages HTML and CSS validate
+-->
+
+<!DOCTYPE html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Site Report Page</title>
     <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/report.css" />
     <script defer src="./script/global.js"></script>
   </head>
   <body>
@@ -22,6 +38,100 @@
         <li><a href="sitereport.html">Site Report</a></li>
       </ul>
     </nav>
-    <h1>Site Report Page</h1>
+    <!-- Main content -->
+    <main>
+      <h1>Site Report</h1>
+      <!-- Validation Section -->
+      <section>
+        <h2>Validation</h2>
+        <p>
+          I needed to do some cleaning up of meta tags for the file encoding and
+          remove spaces from file names to pass the
+          <code><a href="https://validator.w3.org">validator.w3.org</a></code>
+          check.
+        </p>
+
+        <div class="validation-image-grid">
+          <figure>
+            <img src="./assets/screenshots/v-index.png" alt="" />
+            <figcaption>
+              <p>index.html</p>
+            </figcaption>
+          </figure>
+
+          <figure>
+            <img src="./assets/screenshots/v-portfolio.png" alt="" />
+            <figcaption>
+              <p>portfolio.html</p>
+            </figcaption>
+          </figure>
+
+          <figure>
+            <img src="./assets/screenshots/v-contact.png" alt="" />
+            <figcaption>
+              <p>contact.html</p>
+            </figcaption>
+          </figure>
+
+          <figure>
+            <img src="./assets/screenshots/v-blog.png" alt="" />
+            <figcaption>
+              <p>blog.html</p>
+            </figcaption>
+          </figure>
+
+          <figure>
+            <img src="./assets/screenshots/v-report.png" alt="" />
+            <figcaption>
+              <p>sitereport.html</p>
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="validation-image-grid">
+          <figure>
+            <img src="./assets/screenshots/vc-global.png" alt="" />
+            <figcaption>
+              <p>global.css</p>
+            </figcaption>
+          </figure>
+
+          <figure>
+            <img src="./assets/screenshots/v-portfolio.png" alt="" />
+            <figcaption>
+              <p>portfolio.css</p>
+            </figcaption>
+          </figure>
+
+          <figure>
+            <img src="./assets/screenshots/vc-contact.png" alt="" />
+            <figcaption>
+              <p>contact.css</p>
+            </figcaption>
+          </figure>
+
+          <figure>
+            <img src="./assets/screenshots/vc-blog.png" alt="" />
+            <figcaption>
+              <p>blog.css</p>
+            </figcaption>
+          </figure>
+
+          <figure>
+            <img src="./assets/screenshots/vc-index.png" alt="" />
+            <figcaption>
+              <p>index.css</p>
+            </figcaption>
+          </figure>
+
+          <figure>
+            <img src="./assets/screenshots/vc-report.png" alt="" />
+            <figcaption>
+              <p>report.css</p>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
