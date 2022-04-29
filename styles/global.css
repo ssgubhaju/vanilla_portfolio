@@ -1,0 +1,107 @@
+/** Variables **/
+
+:root {
+    --primary-text-color : #000;
+    --primary-color : crimson;
+    --matte : #171717;
+    --black : #070707;
+    --white : #fff;
+    --white-background : #efefef;
+}
+
+/** Unset **/
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--white-background);
+    font-family: sans-serif;
+}
+
+
+/** Link Decorations **/
+
+a {
+    color: black;
+    text-decoration: none;
+    position: relative;
+}
+
+a::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+
+    transition: all ease .5s;
+}
+
+a:hover::after {
+    width: 100%;
+}
+
+
+/** Nav Decorations **/
+nav {
+    background-color: var(--black);
+    display: flex;
+    place-items: center;
+}
+
+nav ul {
+    width: 100%;
+    padding: 0 2rem;
+    
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav a {
+    color : var(--white);
+}
+
+
+button.burger {
+    display: none;
+    width: 2rem;
+    gap: 4px;
+    background: none;
+    border: none;
+}
+
+button.burger span {
+    background-color: var(--white);
+    height: 3px;
+    width: 100%;
+}
+
+
+/** nav for smaller screen sizes **/
+
+@media (max-width : 600px ) {
+    button.burger {
+        display: grid;
+    }
+
+    nav {
+        padding: 1rem;
+        display: grid;
+        justify-content: right;
+        align-items: center;
+    }
+
+    nav ul {
+        display: grid;
+        text-align: right;
+        padding: 0;
+    }
+
+}
