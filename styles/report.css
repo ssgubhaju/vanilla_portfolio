@@ -7,6 +7,29 @@ figure {
     gap: 3rem;
 }
 
+.retain {
+    width: fit-content;
+    max-width: 100%;
+}
+
+img{
+    box-shadow: 0px 12px 32px -8px #0003;
+}
+
+ul.checkbox-list {
+    display: grid;
+    gap: .5rem;
+    padding: 0;
+    list-style: none;
+}
+
+ol {
+    display: grid;
+    gap: .5rem;
+}
+li {
+    line-height: 20px;
+}
 
 @media (max-width : 400px) {
     .validation-image-grid {
